@@ -1,0 +1,66 @@
+body, html {
+    height: 100%;
+}
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("final-frontier_large.jpg");
+
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  {
+    box-sizing: border-box;
+  } 
+  .row{
+    display: flex;
+  }
+  .hero-copy{
+    flex: 50px
+  }
+}
+
+@viewport {
+    width: device-width;
+    zoom: 1.1;
+    min-zoom: 0.4;
+    max-zoom: 2;
+    user-zoom: fixed;
+    }
+
+    .one{order: Pioneer 0}
+    .two{order: Luna E-1 No.1}
+    .three{order: Apollo 11}
+    .four{order: Luna 24}
+    .five{order: Hiten}
+    .six{order: ARTEMIS}
+
+    @media screen and (min-width: 980px) {
+        #leftsidebar {width: 200px; float: left;}
+        #main {margin-left: 216px;}
+    }
+        @media screen and (min-width: 980px){
+    .left{
+        left: 0;
+    }
+    .right{
+        left:50%
+    }
+   }
+   @media screen and (max-width: 980px){
+    flex-container{
+        //display: flex;
+    }
+   }
+
+   @supports (display: grid;){
+    div{
+        display: grid;
+    }
+   }
+   @supports not (display: grid){
+    div{
+        float: right;
+    }
+   }
